@@ -1,0 +1,54 @@
+# Política de Privacidad de [VCMC]
+
+## 1. Introducción
+VCMC está comprometida a proteger su privacidad. Esta Política de Privacidad explica cómo recopilamos, usamos y compartimos información sobre usted cuando utiliza nuestra aplicación de chat de voz para Minecraft.
+
+Nuestra aplicación funciona creando un túnel de red local en su dispositivo para permitir la comunicación de voz P2P (Peer-to-Peer) con otros jugadores sin necesidad de configurar servidores externos complejos. Para lograr esto, requerimos permisos específicos cuyo uso detallamos a continuación.
+
+## 2. Permisos Sensibles y Uso de Datos
+
+Para que la aplicación funcione correctamente mientras usted juega, solicitamos los siguientes permisos sensibles:
+
+### A. Micrófono (RECORD_AUDIO)
+* **Finalidad:** La función principal de la aplicación es el chat de voz. Solicitamos acceso al micrófono para capturar su voz y transmitirla en tiempo real a los otros jugadores conectados a su sesión.
+* **Tratamiento de datos:** El audio se procesa en memoria volátil para su transmisión inmediata a través del túnel de red creado por la app. **No almacenamos, grabamos ni subimos sus conversaciones de voz a ningún servidor externo.** El audio es efímero y existe solo durante la transmisión.
+
+### B. Ejecución en Segundo Plano (FOREGROUND_SERVICE y FOREGROUND_SERVICE_DATA_SYNC)
+* **Finalidad:** Dado que usted utilizará esta aplicación simultáneamente mientras juega a Minecraft, nuestra aplicación necesita ejecutarse en segundo plano.
+* **Justificación:** Usamos un "Foreground Service" de tipo `dataSync` para mantener activo el túnel de conexión. Si la aplicación se cerrara al pasar a segundo plano, la conexión de voz se cortaría inmediatamente. Este servicio garantiza que pueda hablar y escuchar a sus amigos sin interrupciones mientras la pantalla muestra el juego.
+
+### C. Superposición de Pantalla (SYSTEM_ALERT_WINDOW)
+* **Finalidad:** Permitir mostrar una interfaz flotante (burbuja o widget) sobre el juego.
+* **Justificación:** Esto le permite silenciar su micrófono, ver quién está hablando o ajustar el volumen sin tener que cerrar o minimizar el juego, mejorando la experiencia de usuario.
+
+### D. Optimización de Batería (REQUEST_IGNORE_BATTERY_OPTIMIZATIONS)
+* **Finalidad:** Evitar que el sistema operativo cierre el túnel de conexión para ahorrar energía mientras juega.
+* **Justificación:** Una conexión de voz en tiempo real requiere una transmisión de datos constante.
+
+## 3. Publicidad e Identificadores (AD_ID)
+Utilizamos servicios de terceros para mostrar publicidad dentro de la aplicación, específicamente **Google AdMob**.
+* Esta aplicación utiliza el permiso de ID de Publicidad de Google (`com.google.android.gms.permission.AD_ID`).
+* Este identificador se utiliza para mostrar anuncios personalizados y analizar el rendimiento de la publicidad.
+* Puede optar por no recibir publicidad personalizada desde la configuración de su dispositivo Android o desde la configuración de Google.
+
+## 4. Pagos y Suscripciones
+Si la aplicación ofrece compras integradas (para eliminar anuncios o funciones premium), utilizamos el sistema de facturación de Google Play (`com.android.vending.BILLING`).
+* Nosotros no recopilamos ni almacenamos su información financiera (como números de tarjetas de crédito). Todas las transacciones son procesadas de forma segura por Google.
+
+## 5. Recopilación de Información Técnica
+Para facilitar la conexión (el túnel), la aplicación puede acceder al estado de la red y Wi-Fi (`ACCESS_NETWORK_STATE`, `ACCESS_WIFI_STATE`). Esta información se utiliza únicamente para establecer la conexión local entre dispositivos y verificar que tiene acceso a internet.
+
+## 6. Compartir información con Terceros
+No vendemos ni compartimos sus datos personales o grabaciones de voz con terceros, excepto en los siguientes casos:
+* **Proveedores de Servicios:** Como Google AdMob (para publicidad) y Google Play Services, que operan bajo sus propias políticas de privacidad.
+* **Requerimiento Legal:** Si estamos obligados por ley a revelar información.
+
+## 7. Seguridad de los Datos
+Implementamos medidas de seguridad razonables para proteger la información que se transmite a través de nuestro túnel de conexión. Sin embargo, recuerde que ningún método de transmisión por internet es 100% seguro.
+
+## 8. Cambios a esta Política
+Podemos actualizar nuestra Política de Privacidad ocasionalmente. Le notificaremos cualquier cambio publicando la nueva Política de Privacidad en esta página.
+
+## 9. Contacto
+Si tiene preguntas sobre esta política o el uso de sus datos, contáctenos en:
+* Correo electrónico: [adrianvega10t@gmail.com]
