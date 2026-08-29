@@ -1,54 +1,180 @@
-# Política de Privacidad de [VCMC]
+# Política de Privacidad de VCMC
+
+**Última actualización:** 29 de agosto de 2026
+
+**Aplicable a:** VCMC 2.2 para Android, iOS y Windows
 
 ## 1. Introducción
-VCMC está comprometida a proteger su privacidad. Esta Política de Privacidad explica cómo recopilamos, usamos y compartimos información sobre usted cuando utiliza nuestra aplicación de chat de voz para Minecraft.
 
-Nuestra aplicación funciona creando un túnel de red local en su dispositivo para permitir la comunicación de voz P2P (Peer-to-Peer) con otros jugadores sin necesidad de configurar servidores externos complejos. Para lograr esto, requerimos permisos específicos cuyo uso detallamos a continuación.
+Esta Política de Privacidad explica cómo **Antoic Projects**, proyecto desarrollado por Naru ("Antoic", "nosotros"), trata la información cuando utiliza **VCMC — Voice Chat for Minecraft** ("VCMC" o "la App").
 
-## 2. Permisos Sensibles y Uso de Datos
+VCMC ofrece chat de voz de proximidad para Minecraft y no requiere crear una cuenta de Antoic. Algunas funciones se conectan con Minecraft, Microsoft, proveedores de voz, servicios publicitarios, tiendas de aplicaciones o servidores elegidos por el usuario. Cada proveedor puede tratar datos conforme a su propia política.
 
-Para que la aplicación funcione correctamente mientras usted juega, solicitamos los siguientes permisos sensibles:
+Esta política cubre la App y la infraestructura oficial de VCMC. Si un administrador configura un relay, Audio Node, servidor de Minecraft o proveedor de voz propio, ese administrador o proveedor controla su servicio, puede establecer reglas de conservación distintas y debe informar a sus usuarios.
 
-### A. Micrófono (RECORD_AUDIO)
-* **Finalidad:** La función principal de la aplicación es el chat de voz. Solicitamos acceso al micrófono para capturar su voz y transmitirla en tiempo real a los otros jugadores conectados a su sesión.
-* **Tratamiento de datos:** El audio se procesa en memoria volátil para su transmisión inmediata a través del túnel de red creado por la app. **No almacenamos, grabamos ni subimos sus conversaciones de voz a ningún servidor externo.** El audio es efímero y existe solo durante la transmisión.
+## 2. Información necesaria para usar VCMC
 
-### B. Ejecución en Segundo Plano (FOREGROUND_SERVICE y FOREGROUND_SERVICE_DATA_SYNC)
-* **Finalidad:** Dado que usted utilizará esta aplicación simultáneamente mientras juega a Minecraft, nuestra aplicación necesita ejecutarse en segundo plano.
-* **Justificación:** Usamos un "Foreground Service" de tipo `dataSync` para mantener activo el túnel de conexión. Si la aplicación se cerrara al pasar a segundo plano, la conexión de voz se cortaría inmediatamente. Este servicio garantiza que pueda hablar y escuchar a sus amigos sin interrupciones mientras la pantalla muestra el juego.
+### A. Identidad de juego y verificación
 
-### C. Superposición de Pantalla (SYSTEM_ALERT_WINDOW)
-* **Finalidad:** Permitir mostrar una interfaz flotante (burbuja o widget) sobre el juego.
-* **Justificación:** Esto le permite silenciar su micrófono, ver quién está hablando o ajustar el volumen sin tener que cerrar o minimizar el juego, mejorando la experiencia de usuario.
+VCMC puede tratar:
 
-### D. Optimización de Batería (REQUEST_IGNORE_BATTERY_OPTIMIZATIONS)
-* **Finalidad:** Evitar que el sistema operativo cierre el túnel de conexión para ahorrar energía mientras juega.
-* **Justificación:** Una conexión de voz en tiempo real requiere una transmisión de datos constante.
+* Gamertag o nombre de jugador.
+* Identificador de la sala, mundo, Realm o servidor.
+* Versión y capacidades de la App.
+* Estado de verificación, rol y pertenencia a grupos.
+* Identificadores aleatorios creados por VCMC para recordar dispositivos de confianza, preferencias y reacciones a notificaciones. Estos identificadores no son el número de serie ni el identificador publicitario del dispositivo.
 
-## 3. Publicidad e Identificadores (AD_ID)
-Utilizamos servicios de terceros para mostrar publicidad dentro de la aplicación, específicamente **Google AdMob**.
-* Esta aplicación utiliza el permiso de ID de Publicidad de Google (`com.google.android.gms.permission.AD_ID`).
-* Este identificador se utiliza para mostrar anuncios personalizados y analizar el rendimiento de la publicidad.
-* Puede optar por no recibir publicidad personalizada desde la configuración de su dispositivo Android o desde la configuración de Google.
+En la infraestructura oficial, la vinculación de una sala y sus dispositivos de confianza puede conservarse hasta **30 días desde su última actividad**. Se admiten hasta cinco dispositivos de confianza por jugador y sala. Los códigos de verificación pendientes caducan aproximadamente en diez minutos.
 
-## 4. Pagos y Suscripciones
-Si la aplicación ofrece compras integradas (para eliminar anuncios o funciones premium), utilizamos el sistema de facturación de Google Play (`com.android.vending.BILLING`).
-* Nosotros no recopilamos ni almacenamos su información financiera (como números de tarjetas de crédito). Todas las transacciones son procesadas de forma segura por Google.
+### B. Estado del juego y de la llamada
 
-## 5. Recopilación de Información Técnica
-Para facilitar la conexión (el túnel), la aplicación puede acceder al estado de la red y Wi-Fi (`ACCESS_NETWORK_STATE`, `ACCESS_WIFI_STATE`). Esta información se utiliza únicamente para establecer la conexión local entre dispositivos y verificar que tiene acceso a internet.
+Para calcular la proximidad y aplicar controles de sala, VCMC puede tratar coordenadas, dimensión, grupo, presencia, rol, estado de silencio o ensordecimiento, volumen, nivel de voz y otros eventos de la sesión. Las coordenadas y estados activos normalmente se mantienen en memoria mientras la sesión está conectada y se eliminan al abandonarla.
 
-## 6. Compartir información con Terceros
-No vendemos ni compartimos sus datos personales o grabaciones de voz con terceros, excepto en los siguientes casos:
-* **Proveedores de Servicios:** Como Google AdMob (para publicidad) y Google Play Services, que operan bajo sus propias políticas de privacidad.
-* **Requerimiento Legal:** Si estamos obligados por ley a revelar información.
+### C. Datos técnicos y de red
 
-## 7. Seguridad de los Datos
-Implementamos medidas de seguridad razonables para proteger la información que se transmite a través de nuestro túnel de conexión. Sin embargo, recuerde que ningún método de transmisión por internet es 100% seguro.
+VCMC y los proveedores que intervienen pueden tratar dirección IP, tiempos de conexión, tipo de transporte, calidad de red, versión de la App y señalización WebRTC necesaria para conectar, proteger y diagnosticar el servicio. En conexiones P2P, WebRTC puede revelar direcciones de red a los demás participantes. Los datos operativos pueden aparecer temporalmente en registros de seguridad y diagnóstico.
 
-## 8. Cambios a esta Política
-Podemos actualizar nuestra Política de Privacidad ocasionalmente. Le notificaremos cualquier cambio publicando la nueva Política de Privacidad en esta página.
+### D. Preferencias locales
 
-## 9. Contacto
-Si tiene preguntas sobre esta política o el uso de sus datos, contáctenos en:
-* Correo electrónico: [adrianvega10t@gmail.com]
+La App guarda localmente datos como Gamertag, idioma, servidores recientes, volúmenes por jugador, accesos rápidos, estado premium y dispositivos de entrada o salida seleccionados. Permanecen hasta que el usuario los cambie, borre los datos de la App o la desinstale.
+
+## 3. Micrófono, voz y rutas de audio
+
+VCMC solicita acceso al micrófono para capturar y transmitir voz en tiempo real. Según la sala, compatibilidad y configuración, el audio puede viajar mediante:
+
+* **P2P WebRTC:** directamente entre participantes, usando señalización para establecer la conexión.
+* **SFU o Audio Node:** a través de un nodo oficial o comunitario que reenvía el audio.
+* **Direct Voice / Simple Voice Chat:** entre VCMC y la infraestructura de voz del servidor de Minecraft.
+* **Transmisión de voz externa:** si un administrador habilita esta función y el usuario entra, el micrófono puede publicarse directamente al proveedor indicado por el servidor.
+
+**Antoic no graba ni escucha automáticamente las llamadas. Sin embargo, no todo el audio es P2P.** Un Audio Node, SFU, servidor de Minecraft o proveedor externo puede procesar el audio necesario para prestar su servicio. Cuando no esté habilitado el cifrado de extremo a extremo, el operador técnicamente podría acceder al audio.
+
+WebRTC y las conexiones con servidores usan cifrado de transporte. El **cifrado de extremo a extremo** es adicional y solo debe considerarse activo cuando VCMC lo indique expresamente. Un proveedor de transmisión externa puede transcribir, procesar o grabar el audio conforme a sus propias condiciones.
+
+Silenciarse, usar pulsar para hablar o salir de la sesión detiene la publicación de voz correspondiente, pero no necesariamente una grabación local iniciada por el propio usuario.
+
+## 4. Grabaciones locales y multipista
+
+VCMC permite iniciar manualmente una grabación. Cuando el usuario pulsa grabar, la App puede crear en el dispositivo:
+
+* Una mezcla completa de la sesión.
+* Una pista del micrófono propio.
+* Una pista de lo que el usuario escuchó.
+* Pistas separadas de los participantes escuchados.
+
+Los archivos **no se suben automáticamente** a Antoic. Permanecen en el dispositivo hasta que el usuario los elimine y solo se comparten o exportan cuando este lo solicita.
+
+**Silenciar la transmisión no equivale a detener una grabación.** Si una grabación está activa, la pista del micrófono propio puede seguir capturándose localmente aunque el usuario esté silenciado dentro de la llamada.
+
+Otros participantes pueden utilizar VCMC u otras herramientas para grabar. Antes de grabar o compartir una conversación, el usuario debe obtener los consentimientos exigidos y cumplir las leyes aplicables.
+
+## 5. Transcripción de voz
+
+La transcripción es opcional y requiere tanto la preferencia del usuario como la habilitación del administrador. El audio se entrega al reconocedor de voz del sistema, que puede ser proporcionado por Apple, Google o Microsoft según el dispositivo y su configuración. El proveedor puede procesarlo localmente o mediante sus servicios.
+
+VCMC no envía al relay oficial el audio ni las hipótesis parciales de la transcripción. Cuando la función está activa, puede enviar el **texto final**, idioma e identidad de jugador verificada al relay y al servidor de Minecraft para mostrarlo en chat, barra de acción, títulos u otras integraciones. Estos mensajes permanecen en colas breves, normalmente entre 30 segundos y dos minutos.
+
+## 6. Modo Realms y proxy local
+
+El modo Realms usa el inicio de sesión de Microsoft para localizar y conectar con el Realm elegido. Los tokens de acceso y actualización se guardan localmente en el dispositivo y no se envían al servidor de voz de VCMC. Al cerrar sesión desde la función correspondiente, la App elimina la credencial local.
+
+El proxy de Realms se ejecuta en el propio Android, iPhone o equipo Windows y puede aceptar conexiones desde dispositivos de la misma red local, por ejemplo una consola. Los paquetes del mundo viajan entre ese proxy local y Microsoft/Minecraft Realms; **no atraviesan los servidores de Antoic**. Los registros técnicos que genere el proxy permanecen localmente; en escritorio se rotan para limitar su tamaño. La voz y los datos de sala siguen la ruta de voz seleccionada descrita en esta política.
+
+## 7. Diagnósticos
+
+Las estadísticas recientes de calidad de voz se conservan localmente durante un periodo corto, normalmente dos minutos. El informe que el usuario copia voluntariamente usa identificadores resumidos y no incluye intencionadamente IP, URL, tokens, SDP, candidatos completos ni identificadores del dispositivo. Los diagnósticos no se suben automáticamente.
+
+## 8. Permisos del sistema
+
+VCMC solo solicita o declara permisos necesarios para las funciones disponibles en cada plataforma.
+
+### Android
+
+* **Micrófono (`RECORD_AUDIO`) y servicio en primer plano de micrófono:** capturar la voz y mantener la llamada activa mientras se usa Minecraft.
+* **Reproducción multimedia y ajustes de audio:** reproducir voces, seleccionar rutas de salida y conservar la sesión de audio.
+* **Superposición (`SYSTEM_ALERT_WINDOW`):** mostrar la burbuja flotante para silenciar, ensordecer o controlar VCMC sobre el juego.
+* **Notificaciones (`POST_NOTIFICATIONS`):** mostrar el servicio activo, controles y avisos de VCMC.
+* **Red e internet:** conectar con salas, relays, proveedores de voz, Realms y servicios necesarios.
+* **Bloqueo de activación y exclusión opcional de batería:** reducir interrupciones de la llamada mientras la App está en segundo plano.
+
+### iOS
+
+* **Micrófono y audio/VoIP en segundo plano:** capturar voz y mantener la llamada mientras se usa Minecraft.
+* **Red local:** permitir conexiones P2P y que Minecraft o una consola de la misma red se conecten al proxy local de Realms.
+* **Reconocimiento de voz:** únicamente cuando se habilita la función de transcripción.
+* **Notificaciones remotas:** recibir avisos de VCMC.
+* **Seguimiento publicitario:** iOS puede solicitar autorización antes de permitir identificadores para anuncios personalizados.
+
+VCMC no captura ni transmite imágenes de la cámara. Algunos componentes de WebRTC pueden declarar compatibilidad con cámara para su inicialización, pero VCMC utiliza audio únicamente.
+
+### Windows
+
+VCMC utiliza el micrófono, dispositivos de reproducción, red, almacenamiento local y notificaciones conforme a los permisos y ajustes de Windows.
+
+## 9. Publicidad, analítica y notificaciones
+
+Para sostener el proyecto, la App puede usar:
+
+* **Google AdMob:** anuncios, medición publicitaria y, cuando exista consentimiento, personalización. Puede tratar el identificador publicitario, IP, información aproximada del dispositivo y eventos de anuncios.
+* **Plataforma de consentimiento de Google:** solicitar y guardar las opciones publicitarias aplicables a la región.
+* **Firebase Analytics:** eventos de uso y datos técnicos seudónimos para medir estabilidad y mejorar funciones.
+* **Firebase Cloud Messaging:** generar un token de entrega y suscribir la App al canal general de VCMC. Las reacciones se asocian con un identificador aleatorio y se conservan mientras exista la notificación relacionada.
+
+La opción premium elimina los anuncios dentro de la App cuando corresponda, pero no desactiva necesariamente las funciones técnicas, notificaciones ni analítica. El usuario puede gestionar consentimiento publicitario, seguimiento y notificaciones desde la App o los ajustes del sistema.
+
+Más información: [Política de Privacidad de Google](https://policies.google.com/privacy) y [cómo Google usa datos de aplicaciones asociadas](https://policies.google.com/technologies/partner-sites).
+
+## 10. Compras y apoyo externo
+
+Las compras dentro de la App son procesadas por Apple App Store o Google Play. Antoic recibe el estado necesario para reconocer la compra, pero **no recibe ni almacena el número de tarjeta**.
+
+Si el usuario decide apoyar el proyecto mediante Patreon, Patreon trata el pago y los datos de la cuenta conforme a su [política de privacidad](https://privacy.patreon.com/policies).
+
+## 11. Proveedores y compartición
+
+**No vendemos datos personales.** Podemos comunicar o permitir el tratamiento de la información estrictamente necesaria a:
+
+* Google: Firebase, Analytics, AdMob, consentimiento, notificaciones y Google Play.
+* Apple: App Store, servicios del sistema, notificaciones y reconocimiento de voz, cuando corresponda.
+* Microsoft/Minecraft: inicio de sesión y conexión a Realms.
+* Proveedores de alojamiento y conectividad de la infraestructura oficial.
+* Operadores de Audio Nodes, relays, servidores de Minecraft o transmisiones de voz que el usuario decida utilizar.
+* Autoridades o terceros cuando sea necesario para cumplir la ley, proteger el servicio o defender derechos.
+
+Consulte también las políticas de [Apple](https://www.apple.com/legal/privacy/) y [Microsoft](https://privacy.microsoft.com/privacystatement).
+
+## 12. Conservación
+
+Conservamos cada categoría solo durante el tiempo indicado en esta política o el necesario para prestar y proteger el servicio. En general:
+
+* Las preferencias, credenciales de Microsoft y grabaciones locales permanecen en el dispositivo hasta que el usuario las elimine, cierre sesión o desinstale la App.
+* Las coordenadas y estados de sesión se mantienen mientras la conexión está activa.
+* Los códigos de verificación pendientes duran aproximadamente diez minutos.
+* Las vinculaciones oficiales y dispositivos de confianza pueden conservarse hasta 30 días desde su última actividad.
+* Los mensajes finales de transcripción permanecen en colas breves de entre 30 segundos y dos minutos.
+* Los registros de seguridad, copias de respaldo y obligaciones legales pueden requerir una conservación limitada adicional.
+
+Los servicios autohospedados y proveedores externos fijan sus propios plazos.
+
+## 13. Controles y derechos
+
+El usuario puede detener la voz saliendo de la sala, revocar permisos, borrar grabaciones y preferencias, cerrar sesión de Microsoft, borrar los datos de la App o desinstalarla. También puede gestionar anuncios, seguimiento y notificaciones en los ajustes disponibles.
+
+Cuando la legislación aplicable lo permita, puede solicitar acceso, rectificación, oposición o eliminación de los datos controlados por Antoic. Como VCMC no usa una cuenta de Antoic, podríamos necesitar información razonable sobre el Gamertag, sala o dispositivo para localizar una vinculación sin pedir que publique credenciales secretas. Para datos de un servidor comunitario o autohospedado, debe contactar a su administrador.
+
+## 14. Menores de edad
+
+VCMC no está diseñada para recopilar deliberadamente datos personales de niños. Los menores deben utilizarla con la autorización y supervisión que exijan su país, Minecraft, la tienda y el servidor. Si un padre o tutor considera que tratamos indebidamente datos de un menor, puede contactarnos para solicitar su revisión o eliminación.
+
+## 15. Seguridad
+
+Aplicamos medidas razonables como credenciales con alcance limitado, caducidad, cifrado de transporte y almacenamiento local protegido por el sistema. Ningún sistema conectado a internet es completamente seguro. El usuario debe mantener sus dispositivos y credenciales protegidos y elegir con cuidado los servidores comunitarios.
+
+## 16. Cambios y contacto
+
+Podemos actualizar esta política cuando cambien VCMC, sus proveedores o la legislación. Publicaremos la versión vigente en este mismo archivo e indicaremos la fecha de actualización.
+
+Para preguntas o solicitudes relacionadas con privacidad:
+
+* **Correo electrónico:** [narucreations1@gmail.com](mailto:narucreations1@gmail.com)
+* **Sitio web:** [https://antoic.com/contacto.html](https://antoic.com/contacto.html)
