@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updatedAt": "2026-09-05T19:02:50.225Z",
+  "updatedAt": "2026-09-05T19:17:32.284Z",
   "automation": {
     "owner": "github-actions",
     "mode": "release",
@@ -16,55 +16,102 @@
       "minimumVersion": "1.26.40",
       "maximumVersion": "1.26.49"
     },
-    "sourceSha": "ca299da7f54f3f2bec89e8aca7eec5aab33383e9",
+    "sourceSha": "7dbc838316946ff3d4a5a87c385588bf72354814",
     "provenance": "production_source"
   },
   "check": {
-    "id": 33985800559,
-    "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/33985800559",
-    "updatedAt": "2026-09-05T19:02:50.225Z",
-    "conclusion": "success",
-    "classification": "unchanged"
+    "id": 33986006072,
+    "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/33986006072",
+    "updatedAt": "2026-09-05T19:17:32.284Z",
+    "conclusion": "failure",
+    "classification": "unchanged",
+    "realmLab": {
+      "status": "passed",
+      "required": true,
+      "jobs": {
+        "realm-lab-source": "success",
+        "realm-lab-build": "success",
+        "realm-lab": "success",
+        "realm-lab-persist": "success"
+      }
+    }
   },
   "run": {
-    "id": 33977728190,
-    "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/33977728190",
-    "correlationId": "automation-validation-20260905-distribution-fix",
-    "createdAt": "2026-09-05T16:23:46Z",
-    "updatedAt": "2026-09-05T19:02:50.225Z",
+    "id": 33986006072,
+    "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/33986006072",
+    "correlationId": "realm-live-cloud-20260905-7dbc8383",
+    "createdAt": "2026-09-05T19:17:32.284Z",
+    "updatedAt": "2026-09-05T19:17:32.284Z",
     "status": "completed",
-    "conclusion": "success",
+    "conclusion": "failure",
     "minecraft": {
       "version": "1.26.45",
       "protocol": 2169
     },
-    "sourceSha": "d908f985868d9b3ac66ca531e9fdf90dc2ffaf53",
+    "sourceSha": "7dbc838316946ff3d4a5a87c385588bf72354814",
     "buildNumber": null,
     "windowsVersion": null,
     "appVersion": null,
+    "realmLab": {
+      "status": "passed",
+      "required": true,
+      "jobs": {
+        "realm-lab-source": "success",
+        "realm-lab-build": "success",
+        "realm-lab": "success",
+        "realm-lab-persist": "success"
+      }
+    },
     "platforms": {
       "android": {
-        "status": "passed"
+        "status": "blocked",
+        "detail": "La entrega fue cancelada."
       },
       "ios": {
-        "status": "passed"
+        "status": "blocked",
+        "detail": "La entrega fue cancelada."
       },
       "windows": {
-        "status": "passed"
+        "status": "blocked",
+        "detail": "La entrega fue cancelada."
       }
     },
     "manifest": {
       "status": "published"
     }
   },
+  "candidate": {
+    "id": 33986006072,
+    "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/33986006072",
+    "createdAt": "2026-09-05T19:17:32.284Z",
+    "updatedAt": "2026-09-05T19:17:32.284Z",
+    "status": "completed",
+    "conclusion": "failure",
+    "minecraft": {
+      "version": "1.26.45",
+      "protocol": 2169
+    },
+    "sourceSha": "7dbc838316946ff3d4a5a87c385588bf72354814",
+    "buildNumber": null,
+    "realmLab": {
+      "status": "passed",
+      "required": true,
+      "jobs": {
+        "realm-lab-source": "success",
+        "realm-lab-build": "success",
+        "realm-lab": "success",
+        "realm-lab-persist": "success"
+      }
+    }
+  },
   "scheduler": {
-    "shouldBuild": false,
+    "shouldBuild": true,
     "deliver": false,
     "retryPending": false,
     "retryRunId": null,
-    "reason": "unchanged",
-    "checkedAt": "2026-09-05T19:01:55.206Z",
-    "sourceSha": "ca299da7f54f3f2bec89e8aca7eec5aab33383e9",
+    "reason": "explicit_build",
+    "checkedAt": "2026-09-05T19:05:42.746Z",
+    "sourceSha": "7dbc838316946ff3d4a5a87c385588bf72354814",
     "upstreamKey": ""
   }
 }
