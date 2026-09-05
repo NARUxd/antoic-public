@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updatedAt": "2026-09-05T23:00:42.078Z",
+  "updatedAt": "2026-09-05T23:12:16.218Z",
   "automation": {
     "owner": "github-actions",
     "mode": "release",
@@ -68,8 +68,8 @@
         "detail": "Google Play: completed; disponibilidad pública aún no confirmada."
       },
       "ios": {
-        "status": "failed",
-        "detail": "La entrega falló; revisa la ejecución asociada."
+        "status": "submitted",
+        "detail": "Entrega iOS recuperada con SDK compatible o build exacto ya recibido. Disponibilidad pública aún no confirmada. Recuperación 33997696514."
       },
       "windows": {
         "status": "in_review",
@@ -147,20 +147,35 @@
       "job": "Recover the original signed windows delivery",
       "version": "2.2.1",
       "buildNumber": 116
+    },
+    "ios": {
+      "id": 33997696514,
+      "attempt": 1,
+      "originalRunId": 33990319354,
+      "toolingSha": "afa1a01265bc800f9f1ece47c34c4a08ad34e85a",
+      "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/33997696514",
+      "workflow": ".github/workflows/realms-ios-rebuild-recovery.yml",
+      "job": "Rebuild the approved iOS source and reconcile App Store delivery",
+      "status": "submitted",
+      "version": "2.2.1",
+      "buildNumber": 116,
+      "packageSha256": "e11b3a00d6713c2b11d8b50e4f53e5f9eea18b608327860f7de7019d3ef8b207",
+      "deliveryMode": "rebuilt_ipa",
+      "existingBuildId": null
     }
   },
   "deliveryRecovery": {
-    "id": 33996411244,
-    "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/33996411244",
+    "id": 33997696514,
+    "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/33997696514",
     "originalRunId": 33990319354,
-    "conclusion": "failure",
+    "conclusion": "success",
     "results": {
       "ios": {
-        "status": "failed",
-        "packageSha256": null
+        "status": "submitted",
+        "packageSha256": "e11b3a00d6713c2b11d8b50e4f53e5f9eea18b608327860f7de7019d3ef8b207"
       }
     },
-    "updatedAt": "2026-09-05T22:45:55.139Z"
+    "updatedAt": "2026-09-05T23:12:16.218Z"
   },
   "scheduler": {
     "shouldBuild": false,
