@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updatedAt": "2026-09-05T22:45:55.139Z",
+  "updatedAt": "2026-09-05T23:00:42.078Z",
   "automation": {
     "owner": "github-actions",
     "mode": "release",
@@ -16,13 +16,13 @@
       "minimumVersion": "1.26.40",
       "maximumVersion": "1.26.49"
     },
-    "sourceSha": "381d58e8287dc882f5d9485999ef9c151febe38c",
+    "sourceSha": "e0028bc58711a7940a3d39fa3e8d6c29102b129c",
     "provenance": "production_source"
   },
   "check": {
-    "id": 33992108999,
-    "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/33992108999",
-    "updatedAt": "2026-09-05T21:28:30.171Z",
+    "id": 33997391772,
+    "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/33997391772",
+    "updatedAt": "2026-09-05T23:00:42.078Z",
     "conclusion": "success",
     "classification": "unchanged",
     "realmLab": {
@@ -41,7 +41,7 @@
     "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/33990319354",
     "correlationId": "realm-production-delivery-20260905",
     "createdAt": "2026-09-05T21:26:05.620Z",
-    "updatedAt": "2026-09-05T21:28:30.171Z",
+    "updatedAt": "2026-09-05T23:00:42.078Z",
     "status": "completed",
     "conclusion": "failure",
     "minecraft": {
@@ -65,15 +65,15 @@
     "platforms": {
       "android": {
         "status": "submitted",
-        "detail": "Entrega recuperada con el archivo original; disponibilidad pública aún no confirmada. Recuperación 33994659670."
+        "detail": "Google Play: completed; disponibilidad pública aún no confirmada."
       },
       "ios": {
         "status": "failed",
         "detail": "La entrega falló; revisa la ejecución asociada."
       },
       "windows": {
-        "status": "submitted",
-        "detail": "Entrega recuperada con el archivo original; disponibilidad pública aún no confirmada. Recuperación 33994931437."
+        "status": "in_review",
+        "detail": "Microsoft Store: Release"
       }
     },
     "manifest": {
@@ -121,29 +121,6 @@
   "windowsEngine": {
     "manifestUrl": "https://raw.githubusercontent.com/NARUxd/antoic-public/refs/heads/master/vcmc/windows/engine.json"
   },
-  "scheduler": {
-    "shouldBuild": false,
-    "deliver": false,
-    "retryPending": true,
-    "retryRunId": 33990319354,
-    "reason": "retry_backoff",
-    "checkedAt": "2026-09-05T21:27:27.699Z",
-    "sourceSha": "381d58e8287dc882f5d9485999ef9c151febe38c",
-    "upstreamKey": ""
-  },
-  "deliveryRecovery": {
-    "id": 33996411244,
-    "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/33996411244",
-    "originalRunId": 33990319354,
-    "conclusion": "failure",
-    "results": {
-      "ios": {
-        "status": "failed",
-        "packageSha256": null
-      }
-    },
-    "updatedAt": "2026-09-05T22:45:55.139Z"
-  },
   "deliveryRecoveries": {
     "android": {
       "id": 33994659670,
@@ -171,5 +148,28 @@
       "version": "2.2.1",
       "buildNumber": 116
     }
+  },
+  "deliveryRecovery": {
+    "id": 33996411244,
+    "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/33996411244",
+    "originalRunId": 33990319354,
+    "conclusion": "failure",
+    "results": {
+      "ios": {
+        "status": "failed",
+        "packageSha256": null
+      }
+    },
+    "updatedAt": "2026-09-05T22:45:55.139Z"
+  },
+  "scheduler": {
+    "shouldBuild": false,
+    "deliver": false,
+    "retryPending": false,
+    "retryRunId": null,
+    "reason": "delivery_retry_tooling_changed",
+    "checkedAt": "2026-09-05T22:59:48.850Z",
+    "sourceSha": "e0028bc58711a7940a3d39fa3e8d6c29102b129c",
+    "upstreamKey": ""
   }
 }
