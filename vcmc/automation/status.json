@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updatedAt": "2026-09-05T22:13:59.659Z",
+  "updatedAt": "2026-09-05T22:20:56.849Z",
   "automation": {
     "owner": "github-actions",
     "mode": "release",
@@ -132,17 +132,17 @@
     "upstreamKey": ""
   },
   "deliveryRecovery": {
-    "id": 33994931437,
-    "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/33994931437",
+    "id": 33994934892,
+    "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/33994934892",
     "originalRunId": 33990319354,
-    "conclusion": "success",
+    "conclusion": "failure",
     "results": {
-      "windows": {
-        "status": "submitted",
-        "packageSha256": "fd93620afd2f2164e77694a54356d411f11dbb3124d91e22f5caed2714c051d4"
+      "ios": {
+        "status": "failed",
+        "packageSha256": null
       }
     },
-    "updatedAt": "2026-09-05T22:13:59.659Z"
+    "updatedAt": "2026-09-05T22:20:56.849Z"
   },
   "deliveryRecoveries": {
     "android": {
