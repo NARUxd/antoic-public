@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updatedAt": "2026-09-05T22:03:05.727Z",
+  "updatedAt": "2026-09-05T22:13:59.659Z",
   "automation": {
     "owner": "github-actions",
     "mode": "release",
@@ -72,8 +72,8 @@
         "detail": "La entrega falló; revisa la ejecución asociada."
       },
       "windows": {
-        "status": "failed",
-        "detail": "La entrega falló; revisa la ejecución asociada."
+        "status": "submitted",
+        "detail": "Entrega recuperada con el archivo original; disponibilidad pública aún no confirmada. Recuperación 33994931437."
       }
     },
     "manifest": {
@@ -132,17 +132,17 @@
     "upstreamKey": ""
   },
   "deliveryRecovery": {
-    "id": 33994659670,
-    "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/33994659670",
+    "id": 33994931437,
+    "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/33994931437",
     "originalRunId": 33990319354,
     "conclusion": "success",
     "results": {
-      "android": {
+      "windows": {
         "status": "submitted",
-        "packageSha256": "af13ef29d7145ff9c3e3c18dd7532e89862ed0c5d5fe6c9f4e97a408281d980c"
+        "packageSha256": "fd93620afd2f2164e77694a54356d411f11dbb3124d91e22f5caed2714c051d4"
       }
     },
-    "updatedAt": "2026-09-05T22:03:05.727Z"
+    "updatedAt": "2026-09-05T22:13:59.659Z"
   },
   "deliveryRecoveries": {
     "android": {
@@ -155,6 +155,19 @@
       "attempt": 1,
       "toolingSha": "49c8b0fff081a218abd5bc0b41e415fef96078be",
       "job": "Recover the original signed android delivery",
+      "version": "2.2.1",
+      "buildNumber": 116
+    },
+    "windows": {
+      "id": 33994931437,
+      "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/33994931437",
+      "originalRunId": 33990319354,
+      "packageSha256": "fd93620afd2f2164e77694a54356d411f11dbb3124d91e22f5caed2714c051d4",
+      "status": "submitted",
+      "workflow": ".github/workflows/realms-delivery-recovery.yml",
+      "attempt": 1,
+      "toolingSha": "4233e480197b055baace83a03cf0572bbf7163dc",
+      "job": "Recover the original signed windows delivery",
       "version": "2.2.1",
       "buildNumber": 116
     }
