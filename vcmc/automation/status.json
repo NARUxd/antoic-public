@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updatedAt": "2026-09-05T16:54:41.162Z",
+  "updatedAt": "2026-09-05T17:08:28.200Z",
   "automation": {
     "owner": "github-actions",
     "mode": "test",
@@ -16,13 +16,13 @@
       "minimumVersion": "1.26.40",
       "maximumVersion": "1.26.49"
     },
-    "sourceSha": "6eb0bffafcbe35662688c9265ef9e613fad5c8a7",
+    "sourceSha": "e3d3196e9a9c0c45ba64f3adb0fee44d10381feb",
     "provenance": "production_source"
   },
   "check": {
-    "id": 33977728190,
-    "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/33977728190",
-    "updatedAt": "2026-09-05T16:54:41.162Z",
+    "id": 33979903818,
+    "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/33979903818",
+    "updatedAt": "2026-09-05T17:08:28.200Z",
     "conclusion": "success",
     "classification": "unchanged"
   },
@@ -31,7 +31,7 @@
     "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/33977728190",
     "correlationId": "automation-validation-20260905-distribution-fix",
     "createdAt": "2026-09-05T16:23:46Z",
-    "updatedAt": "2026-09-05T16:54:41.162Z",
+    "updatedAt": "2026-09-05T17:08:28.200Z",
     "status": "completed",
     "conclusion": "success",
     "minecraft": {
@@ -56,5 +56,15 @@
     "manifest": {
       "status": "published"
     }
+  },
+  "scheduler": {
+    "shouldBuild": false,
+    "deliver": false,
+    "retryPending": false,
+    "retryRunId": null,
+    "reason": "unchanged",
+    "checkedAt": "2026-09-05T17:07:32.053Z",
+    "sourceSha": "e3d3196e9a9c0c45ba64f3adb0fee44d10381feb",
+    "upstreamKey": ""
   }
 }
