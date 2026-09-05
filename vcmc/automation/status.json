@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updatedAt": "2026-09-05T21:50:01.143Z",
+  "updatedAt": "2026-09-05T22:03:05.727Z",
   "automation": {
     "owner": "github-actions",
     "mode": "release",
@@ -64,8 +64,8 @@
     },
     "platforms": {
       "android": {
-        "status": "failed",
-        "detail": "La entrega falló; revisa la ejecución asociada."
+        "status": "submitted",
+        "detail": "Entrega recuperada con el archivo original; disponibilidad pública aún no confirmada. Recuperación 33994659670."
       },
       "ios": {
         "status": "failed",
@@ -132,20 +132,31 @@
     "upstreamKey": ""
   },
   "deliveryRecovery": {
-    "id": 33994018577,
-    "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/33994018577",
+    "id": 33994659670,
+    "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/33994659670",
     "originalRunId": 33990319354,
-    "conclusion": "failure",
+    "conclusion": "success",
     "results": {
       "android": {
-        "status": "failed",
+        "status": "submitted",
         "packageSha256": "af13ef29d7145ff9c3e3c18dd7532e89862ed0c5d5fe6c9f4e97a408281d980c"
-      },
-      "windows": {
-        "status": "failed",
-        "packageSha256": "fd93620afd2f2164e77694a54356d411f11dbb3124d91e22f5caed2714c051d4"
       }
     },
-    "updatedAt": "2026-09-05T21:50:01.143Z"
+    "updatedAt": "2026-09-05T22:03:05.727Z"
+  },
+  "deliveryRecoveries": {
+    "android": {
+      "id": 33994659670,
+      "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/33994659670",
+      "originalRunId": 33990319354,
+      "packageSha256": "af13ef29d7145ff9c3e3c18dd7532e89862ed0c5d5fe6c9f4e97a408281d980c",
+      "status": "submitted",
+      "workflow": ".github/workflows/realms-delivery-recovery.yml",
+      "attempt": 1,
+      "toolingSha": "49c8b0fff081a218abd5bc0b41e415fef96078be",
+      "job": "Recover the original signed android delivery",
+      "version": "2.2.1",
+      "buildNumber": 116
+    }
   }
 }
