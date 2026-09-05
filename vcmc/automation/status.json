@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "updatedAt": "2026-09-05T16:54:41.162Z",
+  "automation": {
+    "owner": "github-actions",
+    "mode": "test",
+    "workflow": "minecraft-release-monitor.yml"
+  },
+  "production": {
+    "current": {
+      "version": "1.26.45",
+      "protocol": 2169
+    },
+    "family": {
+      "label": "1.26.4x",
+      "minimumVersion": "1.26.40",
+      "maximumVersion": "1.26.49"
+    },
+    "sourceSha": "6eb0bffafcbe35662688c9265ef9e613fad5c8a7",
+    "provenance": "production_source"
+  },
+  "check": {
+    "id": 33977728190,
+    "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/33977728190",
+    "updatedAt": "2026-09-05T16:54:41.162Z",
+    "conclusion": "success",
+    "classification": "unchanged"
+  },
+  "run": {
+    "id": 33977728190,
+    "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/33977728190",
+    "correlationId": "automation-validation-20260905-distribution-fix",
+    "createdAt": "2026-09-05T16:23:46Z",
+    "updatedAt": "2026-09-05T16:54:41.162Z",
+    "status": "completed",
+    "conclusion": "success",
+    "minecraft": {
+      "version": "1.26.45",
+      "protocol": 2169
+    },
+    "sourceSha": "d908f985868d9b3ac66ca531e9fdf90dc2ffaf53",
+    "buildNumber": null,
+    "windowsVersion": null,
+    "appVersion": null,
+    "platforms": {
+      "android": {
+        "status": "passed"
+      },
+      "ios": {
+        "status": "passed"
+      },
+      "windows": {
+        "status": "passed"
+      }
+    },
+    "manifest": {
+      "status": "published"
+    }
+  }
+}
