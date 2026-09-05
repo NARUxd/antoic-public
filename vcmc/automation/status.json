@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updatedAt": "2026-09-05T21:26:05.620Z",
+  "updatedAt": "2026-09-05T21:28:30.171Z",
   "automation": {
     "owner": "github-actions",
     "mode": "release",
@@ -20,19 +20,19 @@
     "provenance": "production_source"
   },
   "check": {
-    "id": 33990319354,
-    "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/33990319354",
-    "updatedAt": "2026-09-05T21:26:05.620Z",
-    "conclusion": "failure",
+    "id": 33992108999,
+    "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/33992108999",
+    "updatedAt": "2026-09-05T21:28:30.171Z",
+    "conclusion": "success",
     "classification": "unchanged",
     "realmLab": {
-      "status": "passed",
-      "required": true,
+      "status": "skipped",
+      "required": false,
       "jobs": {
-        "realm-lab-source": "success",
-        "realm-lab-build": "success",
-        "realm-lab": "success",
-        "realm-lab-persist": "success"
+        "realm-lab-source": "skipped",
+        "realm-lab-build": "skipped",
+        "realm-lab": "skipped",
+        "realm-lab-persist": "skipped"
       }
     }
   },
@@ -41,7 +41,7 @@
     "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/33990319354",
     "correlationId": "realm-production-delivery-20260905",
     "createdAt": "2026-09-05T21:26:05.620Z",
-    "updatedAt": "2026-09-05T21:26:05.620Z",
+    "updatedAt": "2026-09-05T21:28:30.171Z",
     "status": "completed",
     "conclusion": "failure",
     "minecraft": {
@@ -110,19 +110,6 @@
       }
     }
   },
-  "scheduler": {
-    "shouldBuild": true,
-    "deliver": true,
-    "retryPending": false,
-    "retryRunId": null,
-    "reason": "explicit_build",
-    "checkedAt": "2026-09-05T20:31:45.002Z",
-    "sourceSha": "fabc8005c6af8f05c38f9c025021476760a1eb1d",
-    "upstreamKey": ""
-  },
-  "windowsEngine": {
-    "manifestUrl": "https://raw.githubusercontent.com/NARUxd/antoic-public/refs/heads/master/vcmc/windows/engine.json"
-  },
   "app": {
     "windows": {
       "standaloneVersion": "2.2.1",
@@ -130,5 +117,18 @@
       "standaloneUrl": "https://github.com/NARUxd/Voice-Chat-Minecraft-PC-VCMC/releases/download/v2.2.1%2B116/VCMC_2.2.1_116_Setup.exe",
       "standaloneSha256": "c28385e2ba874a8c3c6f43d42a732c644491753b7cb1cfc2d56240d0af0c0b3a"
     }
+  },
+  "windowsEngine": {
+    "manifestUrl": "https://raw.githubusercontent.com/NARUxd/antoic-public/refs/heads/master/vcmc/windows/engine.json"
+  },
+  "scheduler": {
+    "shouldBuild": false,
+    "deliver": false,
+    "retryPending": true,
+    "retryRunId": 33990319354,
+    "reason": "retry_backoff",
+    "checkedAt": "2026-09-05T21:27:27.699Z",
+    "sourceSha": "381d58e8287dc882f5d9485999ef9c151febe38c",
+    "upstreamKey": ""
   }
 }
