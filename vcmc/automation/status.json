@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updatedAt": "2026-09-05T23:12:16.218Z",
+  "updatedAt": "2026-09-05T23:24:08.298Z",
   "automation": {
     "owner": "github-actions",
     "mode": "release",
@@ -16,13 +16,13 @@
       "minimumVersion": "1.26.40",
       "maximumVersion": "1.26.49"
     },
-    "sourceSha": "e0028bc58711a7940a3d39fa3e8d6c29102b129c",
+    "sourceSha": "737a1efd253405b315dbac130c0f11b8b6b88451",
     "provenance": "production_source"
   },
   "check": {
-    "id": 33997391772,
-    "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/33997391772",
-    "updatedAt": "2026-09-05T23:00:42.078Z",
+    "id": 33998476458,
+    "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/33998476458",
+    "updatedAt": "2026-09-05T23:24:08.298Z",
     "conclusion": "success",
     "classification": "unchanged",
     "realmLab": {
@@ -41,7 +41,7 @@
     "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/33990319354",
     "correlationId": "realm-production-delivery-20260905",
     "createdAt": "2026-09-05T21:26:05.620Z",
-    "updatedAt": "2026-09-05T23:00:42.078Z",
+    "updatedAt": "2026-09-05T23:24:08.298Z",
     "status": "completed",
     "conclusion": "failure",
     "minecraft": {
@@ -68,8 +68,8 @@
         "detail": "Google Play: completed; disponibilidad pública aún no confirmada."
       },
       "ios": {
-        "status": "submitted",
-        "detail": "Entrega iOS recuperada con SDK compatible o build exacto ya recibido. Disponibilidad pública aún no confirmada. Recuperación 33997696514."
+        "status": "in_review",
+        "detail": "App Store: WAITING_FOR_REVIEW"
       },
       "windows": {
         "status": "in_review",
@@ -182,9 +182,9 @@
     "deliver": false,
     "retryPending": false,
     "retryRunId": null,
-    "reason": "delivery_retry_tooling_changed",
-    "checkedAt": "2026-09-05T22:59:48.850Z",
-    "sourceSha": "e0028bc58711a7940a3d39fa3e8d6c29102b129c",
+    "reason": "delivery_recovered",
+    "checkedAt": "2026-09-05T23:22:58.364Z",
+    "sourceSha": "737a1efd253405b315dbac130c0f11b8b6b88451",
     "upstreamKey": ""
   }
 }
