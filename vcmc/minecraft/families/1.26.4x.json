@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "family": {
+    "label": "1.26.4x",
+    "minimumVersion": "1.26.40",
+    "maximumVersion": "1.26.49"
+  },
+  "protocols": [
+    {
+      "version": "1.26.45",
+      "protocol": 2169,
+      "codecProtocol": 2169
+    },
+    {
+      "version": "1.26.44",
+      "protocol": 2168,
+      "codecProtocol": 2168
+    },
+    {
+      "version": "1.26.42",
+      "protocol": 2168,
+      "codecProtocol": 2168
+    },
+    {
+      "version": "1.26.40",
+      "protocol": 2168,
+      "codecProtocol": 2168
+    }
+  ]
+}
