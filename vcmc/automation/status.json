@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updatedAt": "2026-09-05T19:52:09.370Z",
+  "updatedAt": "2026-09-05T21:26:05.620Z",
   "automation": {
     "owner": "github-actions",
     "mode": "release",
@@ -16,14 +16,14 @@
       "minimumVersion": "1.26.40",
       "maximumVersion": "1.26.49"
     },
-    "sourceSha": "91486725963e47a53c151dfa50134e5f69067854",
+    "sourceSha": "381d58e8287dc882f5d9485999ef9c151febe38c",
     "provenance": "production_source"
   },
   "check": {
-    "id": 33987154004,
-    "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/33987154004",
-    "updatedAt": "2026-09-05T19:52:09.370Z",
-    "conclusion": "success",
+    "id": 33990319354,
+    "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/33990319354",
+    "updatedAt": "2026-09-05T21:26:05.620Z",
+    "conclusion": "failure",
     "classification": "unchanged",
     "realmLab": {
       "status": "passed",
@@ -37,21 +37,21 @@
     }
   },
   "run": {
-    "id": 33987154004,
-    "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/33987154004",
-    "correlationId": "realm-live-cloud-20260905-91486725",
-    "createdAt": "2026-09-05T19:52:09.370Z",
-    "updatedAt": "2026-09-05T19:52:09.370Z",
+    "id": 33990319354,
+    "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/33990319354",
+    "correlationId": "realm-production-delivery-20260905",
+    "createdAt": "2026-09-05T21:26:05.620Z",
+    "updatedAt": "2026-09-05T21:26:05.620Z",
     "status": "completed",
-    "conclusion": "success",
+    "conclusion": "failure",
     "minecraft": {
       "version": "1.26.45",
       "protocol": 2169
     },
-    "sourceSha": "91486725963e47a53c151dfa50134e5f69067854",
-    "buildNumber": null,
-    "windowsVersion": null,
-    "appVersion": null,
+    "sourceSha": "381d58e8287dc882f5d9485999ef9c151febe38c",
+    "buildNumber": 116,
+    "windowsVersion": "2.2.1.0",
+    "appVersion": "2.2.1",
     "realmLab": {
       "status": "passed",
       "required": true,
@@ -64,32 +64,41 @@
     },
     "platforms": {
       "android": {
-        "status": "passed"
+        "status": "failed",
+        "detail": "La entrega falló; revisa la ejecución asociada."
       },
       "ios": {
-        "status": "passed"
+        "status": "failed",
+        "detail": "La entrega falló; revisa la ejecución asociada."
       },
       "windows": {
-        "status": "passed"
+        "status": "failed",
+        "detail": "La entrega falló; revisa la ejecución asociada."
       }
     },
     "manifest": {
       "status": "published"
+    },
+    "windowsInstaller": {
+      "status": "published",
+      "version": "2.2.1",
+      "buildNumber": 116,
+      "sha256": "c28385e2ba874a8c3c6f43d42a732c644491753b7cb1cfc2d56240d0af0c0b3a"
     }
   },
   "candidate": {
-    "id": 33987154004,
-    "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/33987154004",
-    "createdAt": "2026-09-05T19:52:09.370Z",
-    "updatedAt": "2026-09-05T19:52:09.370Z",
+    "id": 33990319354,
+    "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/33990319354",
+    "createdAt": "2026-09-05T21:26:05.620Z",
+    "updatedAt": "2026-09-05T21:26:05.620Z",
     "status": "completed",
-    "conclusion": "success",
+    "conclusion": "failure",
     "minecraft": {
       "version": "1.26.45",
       "protocol": 2169
     },
-    "sourceSha": "91486725963e47a53c151dfa50134e5f69067854",
-    "buildNumber": null,
+    "sourceSha": "fabc8005c6af8f05c38f9c025021476760a1eb1d",
+    "buildNumber": 116,
     "realmLab": {
       "status": "passed",
       "required": true,
@@ -103,12 +112,23 @@
   },
   "scheduler": {
     "shouldBuild": true,
-    "deliver": false,
+    "deliver": true,
     "retryPending": false,
     "retryRunId": null,
     "reason": "explicit_build",
-    "checkedAt": "2026-09-05T19:28:21.856Z",
-    "sourceSha": "91486725963e47a53c151dfa50134e5f69067854",
+    "checkedAt": "2026-09-05T20:31:45.002Z",
+    "sourceSha": "fabc8005c6af8f05c38f9c025021476760a1eb1d",
     "upstreamKey": ""
+  },
+  "windowsEngine": {
+    "manifestUrl": "https://raw.githubusercontent.com/NARUxd/antoic-public/refs/heads/master/vcmc/windows/engine.json"
+  },
+  "app": {
+    "windows": {
+      "standaloneVersion": "2.2.1",
+      "standaloneBuildNumber": 116,
+      "standaloneUrl": "https://github.com/NARUxd/Voice-Chat-Minecraft-PC-VCMC/releases/download/v2.2.1%2B116/VCMC_2.2.1_116_Setup.exe",
+      "standaloneSha256": "c28385e2ba874a8c3c6f43d42a732c644491753b7cb1cfc2d56240d0af0c0b3a"
+    }
   }
 }
