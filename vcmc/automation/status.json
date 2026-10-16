@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updatedAt": "2026-09-08T00:33:31.357Z",
+  "updatedAt": "2026-10-16T17:59:10.603Z",
   "automation": {
     "owner": "github-actions",
     "mode": "release",
@@ -8,23 +8,23 @@
   },
   "production": {
     "current": {
-      "version": "1.26.45",
-      "protocol": 2169
+      "version": "1.26.52",
+      "protocol": 2193
     },
     "family": {
-      "label": "1.26.4x",
-      "minimumVersion": "1.26.40",
-      "maximumVersion": "1.26.49"
+      "label": "1.26.5x",
+      "minimumVersion": "1.26.50",
+      "maximumVersion": "1.26.59"
     },
-    "sourceSha": "3a7e824503910faabf8eb61cf9a47192bd885c98",
+    "sourceSha": "81af56dac7506b7c1709cf44d379346cfff8cddf",
     "provenance": "production_source"
   },
   "check": {
-    "id": 34173588472,
-    "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/34173588472",
-    "updatedAt": "2026-09-08T00:33:31.357Z",
-    "conclusion": "success",
-    "classification": "unchanged",
+    "id": 38943592888,
+    "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/38943592888",
+    "updatedAt": "2026-10-16T17:59:10.603Z",
+    "conclusion": "failure",
+    "classification": "unknown",
     "realmLab": {
       "status": "skipped",
       "required": false,
@@ -41,7 +41,7 @@
     "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/33990319354",
     "correlationId": "realm-production-delivery-20260905",
     "createdAt": "2026-09-05T21:26:05.620Z",
-    "updatedAt": "2026-09-08T00:33:31.357Z",
+    "updatedAt": "2026-10-16T17:59:10.603Z",
     "status": "completed",
     "conclusion": "failure",
     "minecraft": {
@@ -68,8 +68,8 @@
         "detail": "Google Play: completed; disponibilidad pública aún no confirmada."
       },
       "ios": {
-        "status": "in_review",
-        "detail": "App Store: PENDING_DEVELOPER_RELEASE"
+        "status": "published",
+        "detail": "App Store: READY_FOR_SALE"
       },
       "windows": {
         "status": "in_review",
