@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updatedAt": "2026-10-23T22:26:31.634Z",
+  "updatedAt": "2026-10-23T23:05:29.980Z",
   "automation": {
     "owner": "github-actions",
     "mode": "release",
@@ -20,9 +20,9 @@
     "provenance": "production_source"
   },
   "check": {
-    "id": 40033436200,
-    "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/40033436200",
-    "updatedAt": "2026-10-23T22:26:31.634Z",
+    "id": 40037434364,
+    "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/40037434364",
+    "updatedAt": "2026-10-23T23:05:29.980Z",
     "conclusion": "failure",
     "classification": "unknown",
     "realmLab": {
@@ -41,7 +41,7 @@
     "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/33990319354",
     "correlationId": "realm-production-delivery-20260905",
     "createdAt": "2026-09-05T21:26:05.620Z",
-    "updatedAt": "2026-10-23T22:26:31.634Z",
+    "updatedAt": "2026-10-23T23:05:29.980Z",
     "status": "completed",
     "conclusion": "failure",
     "minecraft": {
