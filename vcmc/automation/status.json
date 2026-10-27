@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updatedAt": "2026-10-27T16:11:41.928Z",
+  "updatedAt": "2026-10-27T17:27:03.714Z",
   "automation": {
     "owner": "github-actions",
     "mode": "release",
@@ -20,20 +20,21 @@
     "provenance": "production_source"
   },
   "check": {
-    "id": 40538195912,
-    "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/40538195912",
-    "updatedAt": "2026-10-27T16:11:41.928Z",
+    "id": 40550352413,
+    "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/40550352413",
+    "updatedAt": "2026-10-27T17:27:03.714Z",
     "conclusion": "failure",
     "classification": "unknown",
     "realmLab": {
-      "status": "skipped",
-      "required": false,
+      "status": "blocked",
+      "required": true,
       "jobs": {
         "realm-lab-source": "skipped",
         "realm-lab-build": "skipped",
         "realm-lab": "skipped",
         "realm-lab-persist": "skipped"
-      }
+      },
+      "detail": "Falta completar la entrada al Realm y la recepción de paquetes VCMC del candidato."
     }
   },
   "run": {
@@ -41,7 +42,7 @@
     "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/33990319354",
     "correlationId": "realm-production-delivery-20260905",
     "createdAt": "2026-09-05T21:26:05.620Z",
-    "updatedAt": "2026-10-27T16:11:41.928Z",
+    "updatedAt": "2026-10-27T17:27:03.714Z",
     "status": "completed",
     "conclusion": "failure",
     "minecraft": {
