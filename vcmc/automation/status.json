@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updatedAt": "2026-10-28T18:12:15.620Z",
+  "updatedAt": "2026-10-28T19:26:43.242Z",
   "automation": {
     "owner": "github-actions",
     "mode": "release",
@@ -20,11 +20,11 @@
     "provenance": "production_source"
   },
   "check": {
-    "id": 40742534076,
-    "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/40742534076",
-    "updatedAt": "2026-10-28T18:12:15.620Z",
+    "id": 40754089284,
+    "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/40754089284",
+    "updatedAt": "2026-10-28T19:26:43.242Z",
     "conclusion": "failure",
-    "classification": "unknown",
+    "classification": "unchanged",
     "realmLab": {
       "status": "skipped",
       "required": false,
@@ -41,7 +41,7 @@
     "url": "https://github.com/narucreations1-hub/vcmc-app/actions/runs/33990319354",
     "correlationId": "realm-production-delivery-20260905",
     "createdAt": "2026-09-05T21:26:05.620Z",
-    "updatedAt": "2026-10-28T18:12:15.620Z",
+    "updatedAt": "2026-10-28T19:26:43.242Z",
     "status": "completed",
     "conclusion": "failure",
     "minecraft": {
@@ -182,9 +182,9 @@
     "deliver": false,
     "retryPending": false,
     "retryRunId": null,
-    "reason": "delivery_recovered",
-    "checkedAt": "2026-09-08T00:32:27.601Z",
-    "sourceSha": "3a7e824503910faabf8eb61cf9a47192bd885c98",
+    "reason": "unchanged",
+    "checkedAt": "2026-10-28T19:25:59.496Z",
+    "sourceSha": "a7e60a2a694066c4d2dcd473cb309c3b8f17b388",
     "upstreamKey": ""
   }
 }
