@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "family": {
+    "label": "1.26.6x",
+    "minimumVersion": "1.26.60",
+    "maximumVersion": "1.26.69"
+  },
+  "protocols": [
+    {
+      "version": "1.26.60",
+      "protocol": 2225,
+      "codecProtocol": 2225
+    }
+  ]
+}
